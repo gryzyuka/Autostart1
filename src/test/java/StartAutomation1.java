@@ -25,6 +25,7 @@ public class StartAutomation1 {
         driver.get("http://magento.brainacad.com/");
         driver.findElement(By.cssSelector("#search")).sendKeys("PC games");
         Thread.sleep(5000);
+        driver.findElement(By.cssSelector(".button.search-button")).click();
     }
 
     @Test
