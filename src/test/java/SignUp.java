@@ -2,9 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.util.Iterator;
 
@@ -17,11 +15,15 @@ public class SignUp {
     final String email = random(10) + "@gmail.com";
     WebDriver driver;
 
-    @BeforeTest
-    public void before() {
+    @BeforeClass
+    public void beforeClass() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\gryzyuka\\.m2\\repository\\webdriver\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+    }
+
+    @BeforeMethod
+    public void beforeMethod() {
         driver.get("http://magento.brainacad.com/english/customer/account/create/");
     }
 
@@ -80,9 +82,13 @@ public class SignUp {
         Thread.sleep(5000);
     }
 
-    @AfterTest
-    public void after() {
+    @AfterMethod
+    public void Method() {
         driver.get("http://magento.brainacad.com/english/customer/account/logout/");
+    }
+
+    @AfterClass
+    public void after() {
         driver.close();
     }
 }
