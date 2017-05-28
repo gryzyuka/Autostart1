@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f51fd75-d589-4e93-b404-671f3a08abef" name="Default" comment="tests renamed, tests: search, invalid search, signup, invalid signup (not finished), login">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/StartAutomation1.class" afterPath="" />
+    <list default="true" id="6f51fd75-d589-4e93-b404-671f3a08abef" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/StartAutomation1.class" afterPath="$PROJECT_DIR$/target/test-classes/StartAutomation1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/StartAutomation1.java" afterPath="$PROJECT_DIR$/src/test/java/StartAutomation1.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,12 +30,11 @@
       <file leaf-file-name="StartAutomation1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/StartAutomation1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+            <state relative-caret-position="24">
+              <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6926#6927#0" expanded="true" />
-                <element signature="e#6956#6957#0" expanded="true" />
+                <element signature="e#6914#6915#0" expanded="true" />
+                <element signature="e#6944#6945#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,7 +88,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-7" />
     <option name="width" value="1378" />
     <option name="height" value="735" />
   </component>
@@ -610,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495878818885</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tests renamed, tests: search (not finished), invalid search, signup, invalid signup (not finished), login">
+      <created>1495921122809</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495921122809</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -620,8 +625,8 @@
     <history-entry file="StartAutomation1 - 2017.05.28 at 00h 36m 39s.xml">
       <configuration name="StartAutomation1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="StartAutomation1_signUpInvalid - 2017.05.27 at 23h 43m 49s.xml">
-      <configuration name="StartAutomation1.signUpInvalid" configurationId="TestNG" />
+    <history-entry file="StartAutomation1 - 2017.05.28 at 08h 18m 43s.xml">
+      <configuration name="StartAutomation1" configurationId="TestNG" />
     </history-entry>
     <history-entry file="StartAutomation1_signUpInvalid - 2017.05.27 at 23h 44m 51s.xml">
       <configuration name="StartAutomation1.signUpInvalid" configurationId="TestNG" />
@@ -655,22 +660,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1378" height="735" extended-state="0" />
+    <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33388704" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33388704" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26479515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -696,7 +701,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="first test for search, second test for registration, third test fir login" />
     <MESSAGE value="first test search updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="first test search updated" />
+    <MESSAGE value="tests renamed, tests: search (not finished), invalid search, signup, invalid signup (not finished), login" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests renamed, tests: search (not finished), invalid search, signup, invalid signup (not finished), login" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -725,9 +731,8 @@
         <state relative-caret-position="204">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6926#6927#0" expanded="true" />
-            <element signature="e#6956#6957#0" expanded="true" />
+            <element signature="e#6914#6915#0" expanded="true" />
+            <element signature="e#6944#6945#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -745,9 +750,8 @@
         <state relative-caret-position="782">
           <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6926#6927#0" expanded="true" />
-            <element signature="e#6956#6957#0" expanded="true" />
+            <element signature="e#6914#6915#0" expanded="true" />
+            <element signature="e#6944#6945#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -765,9 +769,8 @@
         <state relative-caret-position="119">
           <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6926#6927#0" expanded="true" />
-            <element signature="e#6956#6957#0" expanded="true" />
+            <element signature="e#6914#6915#0" expanded="true" />
+            <element signature="e#6944#6945#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -785,9 +788,8 @@
         <state relative-caret-position="119">
           <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6926#6927#0" expanded="true" />
-            <element signature="e#6956#6957#0" expanded="true" />
+            <element signature="e#6914#6915#0" expanded="true" />
+            <element signature="e#6944#6945#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -810,12 +812,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StartAutomation1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        <state relative-caret-position="24">
+          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6926#6927#0" expanded="true" />
-            <element signature="e#6956#6957#0" expanded="true" />
+            <element signature="e#6914#6915#0" expanded="true" />
+            <element signature="e#6944#6945#0" expanded="true" />
           </folding>
         </state>
       </provider>
