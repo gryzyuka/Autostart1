@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.util.Iterator;
@@ -37,6 +38,8 @@ public class SignUp {
         driver.findElement(By.cssSelector("div.buttons-set > button")).click();
         System.out.println(email);
         Thread.sleep(5000);
+        Assert.assertEquals("my dashboard", driver.findElement(By.cssSelector(".page-title")).getText().toLowerCase());
+
     }
 
     @Test
@@ -48,11 +51,11 @@ public class SignUp {
         Iterator<WebElement> iter = validation.iterator();
         while (iter.hasNext()) {
             WebElement item = iter.next();
-            item.getText().contains("This is a required field.");
-            item.getCssValue("font-color").contains("red");
+            Assert.assertEquals("This is a required field.", item.getText());
+            Assert.assertEquals("rgba(255, 0, 0, 1)", item.getCssValue("color"));
+            ;
             System.out.println(item.getAttribute("id"));
         }
-        Thread.sleep(5000);
     }
 
     @Test
@@ -63,9 +66,8 @@ public class SignUp {
         driver.findElement(By.cssSelector("#password")).sendKeys("testpass");
         driver.findElement(By.cssSelector("#confirmation")).sendKeys("testpass");
         driver.findElement(By.cssSelector("div.buttons-set > button")).click();
-        driver.findElement(By.cssSelector(".error-msg")).getText().contains("There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.");
-        driver.findElement(By.cssSelector("a[href=\"http://magento.brainacad.com/english/customer/account/forgotpassword/\"]")).getText().contains("click here");
-        Thread.sleep(5000);
+        Assert.assertEquals("There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.", driver.findElement(By.cssSelector(".error-msg")).getText());
+        Assert.assertEquals("click here", driver.findElement(By.cssSelector("a[href=\"http://magento.brainacad.com/english/customer/account/forgotpassword/\"]")).getText());
     }
 
     @Test
@@ -77,9 +79,8 @@ public class SignUp {
         driver.findElement(By.cssSelector("#confirmation")).sendKeys("testpassI");
         driver.findElement(By.cssSelector("div.buttons-set > button")).click();
         driver.findElement(By.cssSelector("#confirmation")).getCssValue("border-color").contains("red");
-        driver.findElement(By.cssSelector("#advice-validate-cpassword-confirmation")).getCssValue("font-color").contains("red");
-        driver.findElement(By.cssSelector("#advice-validate-cpassword-confirmation")).getText().contains("Please make sure your passwords match.");
-        Thread.sleep(5000);
+        Assert.assertEquals("rgba(255, 0, 0, 1)", driver.findElement(By.cssSelector("#advice-validate-cpassword-confirmation")).getCssValue("color"));
+        Assert.assertEquals("Please make sure your passwords match.", driver.findElement(By.cssSelector("#advice-validate-cpassword-confirmation")).getText());
     }
 
     @AfterMethod
@@ -90,5 +91,6 @@ public class SignUp {
     @AfterClass
     public void after() {
         driver.close();
+
     }
 }
