@@ -1,31 +1,35 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.Iterator;
+import java.util.concurrent.TimeUnit;
 
 import static jdk.nashorn.internal.objects.NativeMath.random;
 
 /**
- * Created by gryzyuka on 28.05.2017.
+ * Created by gryzyuka on 02.06.2017.
  */
 public class SignUp {
-    final String email = random(10) + "@gmail.com";
     WebDriver driver;
+    static final String email = random(1) + "@gmail.com";
+    static String password = "password123";
 
     @BeforeClass
     public void beforeClass() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\gryzyuka\\.m2\\repository\\webdriver\\chromedriver.exe");
         driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
 
     @BeforeMethod
     public void beforeMethod() {
         driver.get("http://magento.brainacad.com/english/customer/account/create/");
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
     }
 
     @Test
@@ -33,13 +37,11 @@ public class SignUp {
         driver.findElement(By.cssSelector("#firstname")).sendKeys("Tester");
         driver.findElement(By.cssSelector("#lastname")).sendKeys("Tester");
         driver.findElement(By.cssSelector("#email_address")).sendKeys(email);
-        driver.findElement(By.cssSelector("#password")).sendKeys("password123");
-        driver.findElement(By.cssSelector("#confirmation")).sendKeys("password123");
+        driver.findElement(By.cssSelector("#password")).sendKeys(password);
+        driver.findElement(By.cssSelector("#confirmation")).sendKeys(password);
         driver.findElement(By.cssSelector("div.buttons-set > button")).click();
         System.out.println(email);
-        Thread.sleep(5000);
         Assert.assertEquals("my dashboard", driver.findElement(By.cssSelector(".page-title")).getText().toLowerCase());
-
     }
 
     @Test
@@ -80,7 +82,7 @@ public class SignUp {
         driver.findElement(By.cssSelector("div.buttons-set > button")).click();
         driver.findElement(By.cssSelector("#confirmation")).getCssValue("border-color").contains("red");
         Assert.assertEquals("rgba(255, 0, 0, 1)", driver.findElement(By.cssSelector("#advice-validate-cpassword-confirmation")).getCssValue("color"));
-        Assert.assertEquals("Please make sure your passwords match.", driver.findElement(By.cssSelector("#advice-validate-cpassword-confirmation")).getText());
+        Assert.assertTrue(driver.findElement(By.cssSelector("#advice-validate-cpassword-confirmation")).getText().contains("Please make sure your passwords match."));
     }
 
     @AfterMethod
